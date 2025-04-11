@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tool {
+        maven 'mvn_home'
+    }
 
     environment {
         APP_NAME = 'my-app'
